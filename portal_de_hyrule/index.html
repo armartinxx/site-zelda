@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portal de Hyrule</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <audio id="bg-music" loop>
+    <source src="5 - The Legend of Zelda_ Ocarina of Time Complete Soundtrack - 05 House [Ifz4Swfw4V8].mp3"
+      type="audio/wav">
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <header>
+    <h1>✨ The Legend of Zelda — Portal de Hyrule ✨</h1>
+    <p>Bem-vindo ao portal de fã — navegue por jogos, personagens, raças e curiosidades.</p>
+    <div class="triforce">
+      <img src="image.png" alt="Triforce" />
+    </div>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#jogos">Jogos</a>
+    <a href="#personagens">Personagens</a>
+    <a href="#racas">Raças</a>
+    <a href="#curiosidades">Curiosidades</a>
+    <a href="#galeria">Galeria</a>
+  </nav>
+
+  <main>
+    <section id="sobre" class="fade-in">
+      <h2>Sobre a Série</h2>
+      <p><em>The Legend of Zelda</em> foi criada por Shigeru Miyamoto e Takashi Tezuka em 1986. A série mistura
+        aventura, exploração, ação e puzzles.</p>
+    </section>
+
+    <section id="jogos" class="fade-in">
+      <h2>Principais Jogos</h2>
+      <div class="game-list">
+        <div class="game" data-title="NES, 1986">
+          <h3>The Legend of Zelda (1986)</h3>
+          <p>O primeiro título da saga que introduziu Hyrule.</p>
+        </div>
+        <div class="game" data-title="N64, 1998">
+          <h3>Ocarina of Time (1998)</h3>
+          <p>Revolucionou os jogos 3D e marcou gerações.</p>
+        </div>
+        <div class="game" data-title="N64, 2000">
+          <h3>Majora's Mask (2000)</h3>
+          <p>Um tom mais sombrio e um ciclo temporal de 3 dias.</p>
+        </div>
+        <div class="game" data-title="Switch, 2017">
+          <h3>Breath of the Wild (2017)</h3>
+          <p>Mundo aberto, física interativa e exploração total.</p>
+        </div>
+        <div class="game" data-title="Switch, 2023">
+          <h3>Tears of the Kingdom (2023)</h3>
+          <p>Expande BOTW com ilhas celestes e novas mecânicas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="personagens" class="fade-in">
+      <h2>Personagens Principais</h2>
+      <div class="character-grid">
+        <div class="character"><img src="image copy.png" alt="Link">
+          <h3>Link</h3>
+          <p>Herói da coragem, empunha a Master Sword.</p>
+        </div>
+        <div class="character"><img src="image copy 2.png" alt="Zelda">
+          <h3>Zelda</h3>
+          <p>Princesa e fonte de sabedoria.</p>
+        </div>
+        <div class="character"><img src="image copy 3.png" alt="Ganondorf">
+          <h3>Ganondorf</h3>
+          <p>Antagonista eterno, portador da Triforce do Poder.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="racas" class="fade-in">
+      <h2>Raças e Espécies de Hyrule</h2>
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">Todas</button>
+        <button class="filter-btn" data-filter="humanos">Humanos</button>
+        <button class="filter-btn" data-filter="misticos">Místicos</button>
+        <button class="filter-btn" data-filter="aquaticos">Aquáticos</button>
+      </div>
+      <div class="race-grid">
+        <div class="race-card" data-type="humanos"><img src="image copy 4.png" alt="Hylianos">
+          <h3>Hylianos</h3>
+          <p>Humanos abençoados com aptidão mágica.</p>
+        </div>
+        <div class="race-card" data-type="misticos"><img src="image copy 5.png" alt="Sheikah">
+          <h3>Sheikah</h3>
+          <p>Guardiões secretos da Família Real.</p>
+        </div>
+        <div class="race-card" data-type="misticos"><img src="image copy 6.png" alt="Gorons">
+          <h3>Gorons</h3>
+          <p>Gigantes de pedra, fortes e leais.</p>
+        </div>
+        <div class="race-card" data-type="aquaticos"><img src="image copy 7.png" alt="Zoras">
+          <h3>Zoras</h3>
+          <p>Seres aquáticos protetores das águas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="curiosidades" class="fade-in">
+      <h2>Curiosidades</h2>
+      <ul class="facts">
+        <li data-more="Zelda Fitzgerald inspirou o nome.">O nome 'Zelda' veio de Zelda Fitzgerald.</li>
+        <li data-more="Majora's Mask foi criado rapidamente em cerca de 1 ano.">Majora's Mask teve desenvolvimento
+          rápido.</li>
+        <li data-more="A cronologia oficial é dividida em três linhas após Ocarina of Time.">A cronologia se divide em 3
+          linhas.</li>
+      </ul>
+    </section>
+
+    <section id="galeria" class="fade-in">
+      <h2>Galeria</h2>
+      <div class="gallery-grid">
+        <img src="image copy 8.png" alt="Link em Hyrule">
+        <img src="image copy 9.png" alt="Zelda e Link">
+        <img src="image copy 10.png" alt="Ganon em batalha">
+      </div>
+      <p><a class="btn" href="https://zelda.nintendo.com/" target="_blank">Visitar site oficial</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 feito por Pedro Martins, um gande amante da franquia desde pequeno quando apresentada por seu irmao mais
+      velho S2</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

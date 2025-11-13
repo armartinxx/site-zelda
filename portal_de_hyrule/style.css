@@ -1,0 +1,36 @@
+/* Portal de Hyrule - style.css (included with ZIP) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Cinzel:wght@400;700&display=swap');
+:root{--gold:#f7d900;--muted:#dfeaf0;--bg1:#07101a}
+*{box-sizing:border-box}body{margin:0;font-family:'Poppins',sans-serif;background:linear-gradient(180deg,#020617 0%,#07101a 100%);color:var(--muted);-webkit-font-smoothing:antialiased}
+header{padding:56px 20px 30px;text-align:center;border-bottom:1px solid rgba(247,217,0,0.06);background:linear-gradient(180deg,rgba(247,217,0,0.02),transparent 40%)}
+h1{font-family:'Cinzel',serif;font-size:2.4rem;color:var(--gold);margin:0;text-shadow:0 0 12px rgba(247,217,0,0.15)}
+header p{color:#dbe9ef;margin-top:10px}
+nav{position:sticky;top:0;z-index:60;display:flex;justify-content:center;gap:18px;padding:10px;background:rgba(0,0,0,0.45);backdrop-filter:blur(6px)}
+nav a{color:var(--gold);text-decoration:none;font-weight:600;padding:8px 12px;border-radius:8px;transition:.18s}
+nav a:hover{background:rgba(247,217,0,0.06);color:#fff;transform:translateY(-3px)}
+main{max-width:1100px;margin:34px auto;padding:0 16px}
+section{margin:26px 0;padding:28px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.01),rgba(255,255,255,0.005));box-shadow:0 8px 30px rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.02);opacity:0;transform:translateY(10px);transition:all .6s cubic-bezier(.2,.9,.2,1)}
+section.visible{opacity:1;transform:none}
+h2{font-family:'Cinzel',serif;color:var(--gold);margin-bottom:12px}
+.game-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.game{background:rgba(255,255,255,0.03);padding:12px;border-radius:10px;border:1px solid rgba(247,217,0,0.04);transition:transform .24s}
+.game:hover{transform:translateY(-6px);box-shadow:0 14px 34px rgba(0,0,0,0.6)}
+.character-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.character{display:flex;gap:12px;align-items:center;padding:12px;border-radius:10px;background:rgba(255,255,255,0.02);border:1px solid rgba(247,217,0,0.04)}
+.character img{width:110px;height:110px;object-fit:cover;border-radius:10px;border:2px solid rgba(255,255,255,0.03)}
+.filter-bar{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:12px}
+.filter-btn{padding:8px 12px;border-radius:999px;border:1px solid rgba(247,217,0,0.12);background:transparent;color:var(--muted);cursor:pointer}
+.filter-btn.active{background:linear-gradient(90deg,rgba(247,217,0,0.12),rgba(247,217,0,0.02));color:var(--gold);box-shadow:0 8px 20px rgba(247,217,0,0.04)}
+.race-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.race-card{padding:12px;border-radius:10px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.02);transition:transform .24s}
+.race-card img{width:100%;height:140px;object-fit:cover;border-radius:8px;margin-bottom:8px}
+.facts{list-style:none;padding:0;display:grid;gap:8px;margin-top:6px}
+.facts li{background:rgba(255,255,255,0.02);padding:10px;border-radius:8px;cursor:help;border:1px solid rgba(255,255,255,0.02)}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:12px}
+.gallery-grid img{width:100%;height:150px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.02)}
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--gold),#ffd54a);color:#072026;text-decoration:none;font-weight:700}
+#music-btn{position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;background:linear-gradient(180deg,var(--gold),#f4d60a);border:none;box-shadow:0 10px 30px rgba(0,0,0,0.5);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:22px;z-index:1001}
+.spark{position:fixed;width:10px;height:10px;border-radius:50%;pointer-events:none;background:radial-gradient(circle,var(--gold),rgba(247,217,0,0.6));transform:translate(-50%,-50%);animation:sparkOut .9s ease-out forwards;z-index:1000}
+@keyframes sparkOut{0%{opacity:1;transform:translate(-50%,-50%) scale(1)}100%{opacity:0;transform:translate(-50%,-50%) scale(5)}}
+footer{padding:18px;text-align:center;color:#cfcfcf;background:linear-gradient(180deg,rgba(0,0,0,0.2),transparent);border-top:1px solid rgba(255,255,255,0.02)}
+@media(max-width:640px){header{padding:36px 12px 24px}h1{font-size:1.6rem}}
